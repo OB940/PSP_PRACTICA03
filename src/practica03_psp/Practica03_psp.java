@@ -11,8 +11,12 @@ public class Practica03_psp {
         java.awt.EventQueue.invokeLater(() -> {
             // CREO UNA LISTA DE CLIENTES
             ListaClientes lista = new ListaClientes();
-            // AÑADO EL PRIMER CLIENTE MEDIANTE EL MÉTODO DE LA CLASE LISTACLIENTES DEL MISMO NOMBRE
-            lista.añadirCliente(new Cliente(1, "JAIME", 250, LocalDate.of(1998, 3, 14)));
+            // AÑADO TRES CLIENTES MEDIANTE EL MÉTODO DE LA CLASE LISTACLIENTES DEL MISMO NOMBRE
+            lista.añadirCliente(new Cliente(1, "JAIME JIMÉNEZ GÓMEZ", 250, LocalDate.of(1998, 3, 14)));
+            lista.añadirCliente(new Cliente(2, "ALBA GARCÍA PRIETO", 500, LocalDate.of(2000, 6, 20)));
+            lista.añadirCliente(new Cliente(3, "RAÚL PÉREZ CASTEJÓN", 375, LocalDate.of(1987, 4, 13)));
+            
+            lista.irAlUltimo(); // HE IDO AL ÚLTIMO CLIENTE, NO SÉ SI ERA MEDIANTE LOS BOTONES DE LA INTERFAZ O MEDIANTE EL MÉTODO.
             
             // CREO UNA VENTANAPRINCIPAL CON LA LISTA
             new VentanaPrincipal(lista).setVisible(true);

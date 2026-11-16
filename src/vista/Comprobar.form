@@ -16,47 +16,54 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="labelFechaNac" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="labelPts" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="labelNombre" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="labelNumero" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="labNumero" alignment="0" max="32767" attributes="0"/>
+                  <Component id="labNombre" alignment="0" max="32767" attributes="0"/>
+                  <Component id="labPuntos" max="32767" attributes="0"/>
+                  <Component id="labFechaNac" alignment="0" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="157" max="-2" attributes="0"/>
-                      <Component id="labelPosicion" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="bEliminar" min="-2" max="-2" attributes="0"/>
                           <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="labelFechaNac" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="labelPts" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="labelNombre" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="labelNumero" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="labNumero" min="-2" max="-2" attributes="0"/>
-                                  <Component id="labNombre" min="-2" max="-2" attributes="0"/>
-                                  <Component id="labPuntos" min="-2" max="-2" attributes="0"/>
-                                  <Component id="labFechaNac" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
                               <Component id="bPrimero" min="-2" pref="40" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="bAnterior" min="-2" pref="40" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
                               <Component id="bSiguiente" min="-2" pref="40" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="bUltimo" min="-2" pref="40" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                              <Component id="bCambiarColor" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="135" max="-2" attributes="0"/>
-                      <Component id="bEliminar" min="-2" max="-2" attributes="0"/>
+                      <Component id="labelPosicion" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="100" max="32767" attributes="0"/>
+              <EmptySpace min="103" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -64,12 +71,12 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
+              <Component id="labelPosicion" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Group type="102" attributes="0">
-                              <Component id="labelPosicion" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="labelNumero" min="-2" max="-2" attributes="0"/>
                                   <Component id="labNumero" min="-2" max="-2" attributes="0"/>
@@ -97,8 +104,11 @@
                   <Component id="bSiguiente" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="bEliminar" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="26" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="bEliminar" min="-2" max="-2" attributes="0"/>
+                  <Component id="bCambiarColor" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="43" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -147,7 +157,7 @@
     </Component>
     <Component class="java.awt.Button" name="bPrimero">
       <Properties>
-        <Property name="label" type="java.lang.String" value="|&lt;"/>
+        <Property name="label" type="java.lang.String" value="&lt;&lt;"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bPrimeroActionPerformed"/>
@@ -171,7 +181,7 @@
     </Component>
     <Component class="java.awt.Button" name="bUltimo">
       <Properties>
-        <Property name="label" type="java.lang.String" value="&gt;|"/>
+        <Property name="label" type="java.lang.String" value="&gt;&gt;"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bUltimoActionPerformed"/>
@@ -179,6 +189,7 @@
     </Component>
     <Component class="java.awt.Label" name="labNumero">
       <Properties>
+        <Property name="alignment" type="int" value="2"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="12" style="1"/>
         </Property>
@@ -187,14 +198,19 @@
     </Component>
     <Component class="java.awt.Label" name="labNombre">
       <Properties>
+        <Property name="alignment" type="int" value="2"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="12" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="33" green="33" red="ff" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="PLACEHOLDER"/>
       </Properties>
     </Component>
     <Component class="java.awt.Label" name="labPuntos">
       <Properties>
+        <Property name="alignment" type="int" value="2"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="12" style="1"/>
         </Property>
@@ -203,6 +219,7 @@
     </Component>
     <Component class="java.awt.Label" name="labFechaNac">
       <Properties>
+        <Property name="alignment" type="int" value="2"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="12" style="1"/>
         </Property>
@@ -215,6 +232,15 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bEliminarActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="java.awt.Button" name="bCambiarColor">
+      <Properties>
+        <Property name="actionCommand" type="java.lang.String" value="CAMBIAR_COLOR"/>
+        <Property name="label" type="java.lang.String" value="CAMBIAR_COLOR"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bCambiarColorActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
